@@ -16,13 +16,20 @@ namespace PetGrooming.Models
             Some things that describe a GroomBooking
                 - A date and time
                 - Price
-            
-            A GroomBooking must reference
-                - A Groomer
-                - A Pet
-                - An Owner
-                - A list of GroomServices
-                
         */
+
+        [Key]
+        public int BookingID { get; set; }
+        public DateTime Date { get; set; }
+        public DateTime Time { get; set; }
+        public int Price { get; set; }
+
+        /*  A GroomBooking must reference
+              - A Groomer
+              - A Pet
+              - An Owner
+              - A list of GroomServices
+
+      */
     }
 }
